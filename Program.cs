@@ -21,14 +21,11 @@ namespace ChessBoard
         static void Menu()  // Menu 
         {
             Console.ForegroundColor = ConsoleColor.Yellow;
-            Console.WriteLine("Que voulez-vous faire ? ");
-            Console.WriteLine("");
+            Console.WriteLine("Que voulez-vous faire ? \n");
             Console.WriteLine("1. Générer le deck");
             Console.WriteLine("2. Afficher le deck");
             Console.WriteLine("3. Piocher le chien");
-            Console.WriteLine("4. Afficher le chien");
-
-            Console.WriteLine("");
+            Console.WriteLine("4. Afficher le chien \n");
 
             switch (Console.ReadLine()) // Action du choix de l'user 
             {
@@ -74,7 +71,7 @@ namespace ChessBoard
             }
 
             Console.WriteLine("Les chiffres ont bien été generés le deck fait " + Dex.Count + " cartes.");
-            Console.WriteLine(" ");
+
 
             IEnumerable<int> atouts = Enumerable.Range(1, 21);
             List<Atout> Deck = new List<Atout>();
@@ -83,7 +80,7 @@ namespace ChessBoard
                 Dex.Add(new Atout(num));
             }
             Console.WriteLine("Les atouts ont bien été generés le deck fait " + Dex.Count + " cartes.");
-            Console.WriteLine(" ");
+
 
             Excuse excuse = new Excuse();
             Dex.Add(excuse);
@@ -182,7 +179,7 @@ namespace ChessBoard
                 Dex[i].nom = noms[i];
             }
 
-            Console.WriteLine("Les noms ont bien été attribués. Retour au MENU ==>");
+            Console.WriteLine("Les noms ont bien été attribués. Retour au MENU ==> \n");
             Menu();
         } // Genere toutes les cartes et attribue les noms (methodes detailles dans "draft.cs")
 
@@ -192,6 +189,8 @@ namespace ChessBoard
             {
                 Console.WriteLine(Dex[i].nom);
             }
+            Console.WriteLine("Retour au MENU ==> \n");
+            Menu();
 
         } // Affiche une liste des noms de toutes les cartes
 
