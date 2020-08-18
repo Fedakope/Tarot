@@ -5,10 +5,8 @@ using System.Text;
 namespace ChessBoard
 {
     
-
     public class Chiffres : Carte
     {
-        
         
         public string couleur;
         public int force;
@@ -18,8 +16,6 @@ namespace ChessBoard
             this.couleur = couleur;
             this.force = force;
         }
-
-        
             
     }
 }

@@ -13,9 +13,5 @@ namespace ChessBoard
             this.force = force;
         }
 
-        public string forceAtout(Atout atout)
-        {
-            return "ma force est de :" + atout.force;
-        }
     }
 }
