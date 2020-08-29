@@ -8,7 +8,8 @@ namespace ChessBoard
     class Program
     {
 
-        static List<Carte> Dex = new List<Carte>(); // création de la liste
+        static List<Carte> Dex = new List<Carte>(); // création du deck
+        static List<Carte> DexShuffled = Dex; // création du deck melangé
         static List<Carte> laMain = new List<Carte>(); // création de la main
 
 
@@ -26,6 +27,7 @@ namespace ChessBoard
             Console.WriteLine("2. Afficher le deck");
             Console.WriteLine("3. Piocher le chien");
             Console.WriteLine("4. Afficher le chien \n");
+            Console.WriteLine("5. Melanger le deck");
 
             switch (Console.ReadLine()) // Action du choix de l'user 
             {
@@ -50,6 +52,7 @@ namespace ChessBoard
                     }
                 case ("5"):
                     {
+                        MelangerDeck();
                         break;
                     }
 
@@ -194,24 +197,56 @@ namespace ChessBoard
 
         } // Affiche une liste des noms de toutes les cartes
 
+        static void MelangerDeck()
+        {
+            
+            var random = new Random();
+            DexShuffled.Sort((x, y) => random.Next(543, 987654));
+            // DexShuffled.Sort((x, y) => random.Next(-1, 2)); // marche aussi mais résultats tout aussi insatisfaisants
+
+            // Affichage du deck mélangé : 
+            for (int i = 0; i < DexShuffled.Count; i++)
+            {
+                Console.WriteLine(DexShuffled[i].nom);
+            }
+            Console.WriteLine("Retour au MENU ==> \n");
+
+            Menu();
+
+        }
+
         static void PiocherChien()
         {
             Console.WriteLine("piochage du chien");
-            Random aleatoire = new Random();
-            int chien1 = aleatoire.Next(79); //Génère un entier compris entre 0 et 78
-            int chien2 = aleatoire.Next(79);
-            int chien3 = aleatoire.Next(79);
-            int chien4 = aleatoire.Next(79);
-            int chien5 = aleatoire.Next(79);
-            int chien6 = aleatoire.Next(79);
-
-            Console.WriteLine();
-        } // Pick 6 cartes dans le deck
+            //Random aleatoire = new Random();
+            //int chien1 = aleatoire.Next(79); //Génère un entier compris entre 0 et 78
 
 
+            Console.WriteLine("il y a " + Dex.Count());
+
+             List<Carte> chien = Dex;
+
+            
 
 
+            for (int i = 0; i < chien.Count; i++)
+            {
+                Console.WriteLine(chien[i].nom);
+            }
+            Console.WriteLine("Retour au MENU ==> \n");
+            Menu();
+
+        } // Affiche une liste des noms de toutes les cartes
 
 
     }
+
+
+
+
+
+
+
+
+    
 }

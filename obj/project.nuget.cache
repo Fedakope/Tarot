@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "lWACOgfPlxyTw1VZmwoBYdGV5DSLx7oqWWaDzVcaP8pZMPjgz8s7QrTT+w5+XIlmqCwaHsvyihHw2kNUxYsBeg==",
+  "dgSpecHash": "wQ7oYNl+aSarqQ2RTsGwtgwNFngsRpqSWpYKbqZX7sNMecR5Q9cnitZJi1B+gCrp0E7oDBo7rCnjp2m4obNfuQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Nil\\Desktop\\tuto\\ChessBoard\\ChessBoard.csproj",
+  "projectFilePath": "/Users/nil/code/Tarot/ChessBoard.csproj",
   "expectedPackageFiles": [],
   "logs": []
 }

@@ -1,27 +1,28 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Nil\\Desktop\\tuto\\ChessBoard\\ChessBoard.csproj": {}
+    "/Users/nil/code/Tarot/ChessBoard.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Nil\\Desktop\\tuto\\ChessBoard\\ChessBoard.csproj": {
+    "/Users/nil/code/Tarot/ChessBoard.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Nil\\Desktop\\tuto\\ChessBoard\\ChessBoard.csproj",
+        "projectUniqueName": "/Users/nil/code/Tarot/ChessBoard.csproj",
         "projectName": "ChessBoard",
-        "projectPath": "C:\\Users\\Nil\\Desktop\\tuto\\ChessBoard\\ChessBoard.csproj",
-        "packagesPath": "C:\\Users\\Nil\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Nil\\Desktop\\tuto\\ChessBoard\\obj\\",
+        "projectPath": "/Users/nil/code/Tarot/ChessBoard.csproj",
+        "packagesPath": "/Users/nil/.nuget/packages/",
+        "outputPath": "/Users/nil/code/Tarot/obj/",
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "/usr/local/share/dotnet/sdk/NuGetFallbackFolder"
+        ],
         "configFilePaths": [
-          "C:\\Users\\Nil\\AppData\\Roaming\\NuGet\\NuGet.Config",
-          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+          "/Users/nil/.config/NuGet/NuGet.Config"
         ],
         "originalTargetFrameworks": [
           "netcoreapp3.1"
         ],
         "sources": {
-          "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -52,7 +53,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\3.1.401\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "/usr/local/share/dotnet/sdk/3.1.401/RuntimeIdentifierGraph.json"
         }
       }
     }
